@@ -6,6 +6,8 @@ target 'bitcoinapp' do
   use_frameworks!
 
   # Pods for bitcoinapp
+  pod 'BitcoinKit'
+  pod 'KeychainAccess'
 
   target 'bitcoinappTests' do
     inherit! :search_paths
