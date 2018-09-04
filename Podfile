@@ -6,6 +6,10 @@ target 'bitcoinapp' do
   use_frameworks!
 
   # Pods for bitcoinapp
+  # for bitcoin. need to install automake.
+  # "brew instal automake"
+  pod 'BitcoinKit'
+  pod 'KeychainAccess'
 
   target 'bitcoinappTests' do
     inherit! :search_paths

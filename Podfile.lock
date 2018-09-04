@@ -1,3 +1,20 @@
-PODFILE CHECKSUM: 434cea46602128b75cc2df0f2ff929ec0d92d431
+PODS:
+  - BitcoinKit (0.1.2)
+  - KeychainAccess (3.1.1)
+
+DEPENDENCIES:
+  - BitcoinKit
+  - KeychainAccess
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - BitcoinKit
+    - KeychainAccess
+
+SPEC CHECKSUMS:
+  BitcoinKit: c24789a6eca87d3b7fe92137c549703be37a901e
+  KeychainAccess: 7bd430028059754a3debab3cfc0bd1fc7fb85df3
+
+PODFILE CHECKSUM: f9b3c24e292ce548682da558e6d151a023ac1fa1
 
 COCOAPODS: 1.5.3
