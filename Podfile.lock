@@ -1,20 +1,28 @@
 PODS:
   - BitcoinKit (1.0.1)
   - KeychainAccess (3.1.1)
+  - R.swift (4.0.0):
+    - R.swift.Library (~> 4.0.0)
+  - R.swift.Library (4.0.0)
 
 DEPENDENCIES:
   - BitcoinKit
   - KeychainAccess
+  - R.swift
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - BitcoinKit
     - KeychainAccess
+    - R.swift
+    - R.swift.Library
 
 SPEC CHECKSUMS:
   BitcoinKit: c23a32263524ba0f2bfcc3aa7a90ed4537856f88
   KeychainAccess: 7bd430028059754a3debab3cfc0bd1fc7fb85df3
+  R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
+  R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
 
-PODFILE CHECKSUM: 773c25732bcc89c743d05cf9e640720a9ffb65e8
+PODFILE CHECKSUM: 4a69133df68e9dcd07bb4e7949bf241e00e16cea
 
 COCOAPODS: 1.5.3

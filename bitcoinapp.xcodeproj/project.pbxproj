@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		31E0F83643FDB6EFDB3D77F6 /* Pods_bitcoinappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD909F8E1BAC100D4EA5643 /* Pods_bitcoinappUITests.framework */; };
+		4425CCD8213FA7D5003368CD /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4425CCD7213FA7D5003368CD /* R.generated.swift */; };
+		4425CCDB213FB29F003368CD /* WalletContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4425CCDA213FB29F003368CD /* WalletContainer.swift */; };
 		44B889AA213E295800B54776 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B889A9213E295800B54776 /* AppDelegate.swift */; };
-		44B889AC213E295800B54776 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B889AB213E295800B54776 /* ViewController.swift */; };
+		44B889AC213E295800B54776 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B889AB213E295800B54776 /* MainViewController.swift */; };
 		44B889AF213E295800B54776 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44B889AD213E295800B54776 /* Main.storyboard */; };
 		44B889B1213E295A00B54776 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44B889B0213E295A00B54776 /* Assets.xcassets */; };
 		44B889B4213E295A00B54776 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44B889B2213E295A00B54776 /* LaunchScreen.storyboard */; };
@@ -41,9 +43,11 @@
 		2238900BAA8BA4D730C9EF14 /* Pods-bitcoinappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bitcoinappTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-bitcoinappTests/Pods-bitcoinappTests.release.xcconfig"; sourceTree = "<group>"; };
 		260022EDD6412347127CBE09 /* Pods-bitcoinappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bitcoinappUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bitcoinappUITests/Pods-bitcoinappUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		39CBB122C826F002D74838AC /* Pods-bitcoinapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bitcoinapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-bitcoinapp/Pods-bitcoinapp.release.xcconfig"; sourceTree = "<group>"; };
+		4425CCD7213FA7D5003368CD /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		4425CCDA213FB29F003368CD /* WalletContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletContainer.swift; sourceTree = "<group>"; };
 		44B889A6213E295800B54776 /* bitcoinapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bitcoinapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44B889A9213E295800B54776 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		44B889AB213E295800B54776 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		44B889AB213E295800B54776 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		44B889AE213E295800B54776 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44B889B0213E295A00B54776 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44B889B3213E295A00B54776 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -89,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4425CCD9213FB264003368CD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4425CCDA213FB29F003368CD /* WalletContainer.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		44B8899D213E295800B54776 = {
 			isa = PBXGroup;
 			children = (
@@ -114,10 +126,12 @@
 		44B889A8213E295800B54776 /* bitcoinapp */ = {
 			isa = PBXGroup;
 			children = (
+				4425CCD9213FB264003368CD /* Services */,
 				44B889A9213E295800B54776 /* AppDelegate.swift */,
 				44B889D7213E299B00B54776 /* Controllers */,
 				44B889B0213E295A00B54776 /* Assets.xcassets */,
 				44B889B2213E295A00B54776 /* LaunchScreen.storyboard */,
+				4425CCD7213FA7D5003368CD /* R.generated.swift */,
 				44B889B5213E295A00B54776 /* Info.plist */,
 			);
 			path = bitcoinapp;
@@ -144,7 +158,7 @@
 		44B889D7213E299B00B54776 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				44B889AB213E295800B54776 /* ViewController.swift */,
+				44B889AB213E295800B54776 /* MainViewController.swift */,
 				44B889AD213E295800B54776 /* Main.storyboard */,
 			);
 			path = Controllers;
@@ -185,6 +199,7 @@
 				44B889A3213E295800B54776 /* Frameworks */,
 				44B889A4213E295800B54776 /* Resources */,
 				4F09CAE58D19E319ACC79A29 /* [CP] Embed Pods Frameworks */,
+				4425CCD6213FA78B003368CD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -322,6 +337,19 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4425CCD6213FA78B003368CD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"";
+		};
 		4F09CAE58D19E319ACC79A29 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -331,11 +359,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-bitcoinapp/Pods-bitcoinapp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BitcoinKit/BitcoinKit.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BitcoinKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -385,8 +415,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44B889AC213E295800B54776 /* ViewController.swift in Sources */,
+				4425CCDB213FB29F003368CD /* WalletContainer.swift in Sources */,
+				44B889AC213E295800B54776 /* MainViewController.swift in Sources */,
 				44B889AA213E295800B54776 /* AppDelegate.swift in Sources */,
+				4425CCD8213FA7D5003368CD /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
