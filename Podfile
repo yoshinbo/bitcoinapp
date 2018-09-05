@@ -7,6 +7,10 @@ target 'bitcoinapp' do
   use_frameworks!
 
   pod 'R.swift'
+  pod 'Alamofire'
+  pod 'RxSwift'
+  pod 'SwiftyJSON'
+  pod 'ObjectMapper', '2.2.2'
 
   # Pods for bitcoinapp
   # for bitcoin. need to install automake.
